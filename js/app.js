@@ -41,8 +41,25 @@ function totalProductPrice(){
     subTotalText.innerText = subTotal;
 }
 
+//Total Price 
+function totalPrice(){
+    const subTotalText =  document.getElementById('sub-total');
+    const subTotal = parseFloat(subTotalText.innerText);
+    const tax = subTotal / 10;
 
+    const taxText = document.getElementById('total-tax');
+    taxText.innerText = tax;
 
+    //delivary
+    const delivaryText = document.getElementById('delivary-total');
+    const delivaryTotal = parseFloat(delivaryText.innerText);
+
+    const total = subTotal + tax + delivaryTotal;
+
+    // update total amount 
+    const totalAmountText = document.getElementById('total-amount');
+    totalAmountText.innerText = total;
+}
 
 //Phone quantity increment and decrement handler
 document.getElementById('phone-increment').addEventListener('click', function(){
@@ -56,6 +73,9 @@ document.getElementById('phone-increment').addEventListener('click', function(){
     //update sub total price
     totalProductPrice();
 
+    // total price update
+    totalPrice()
+
     
 })
 document.getElementById('phone-decrement').addEventListener('click', function(){
@@ -67,6 +87,9 @@ document.getElementById('phone-decrement').addEventListener('click', function(){
 
     //update sub total price
     totalProductPrice();
+
+    // total price update
+    totalPrice()
 })
 
 //Phone Case quantity increment and decrement handler
@@ -79,6 +102,9 @@ document.getElementById('case-increment').addEventListener('click', function(){
 
     //update sub total price
     totalProductPrice();
+
+    // total price update
+    totalPrice()
 })
 document.getElementById('case-decrement').addEventListener('click', function(){
     //case quantity
@@ -89,6 +115,9 @@ document.getElementById('case-decrement').addEventListener('click', function(){
 
    //update sub total price
    totalProductPrice();
+
+   // total price update
+   totalPrice()
 })
 
 //Headphone quantity increment and decrement handler
@@ -101,6 +130,9 @@ document.getElementById('headphone-increment').addEventListener('click', functio
 
     //update sub total price
     totalProductPrice();
+
+    // total price update
+    totalPrice()
 })
 document.getElementById('headphone-decrement').addEventListener('click', function(){
     //headphone quantity
@@ -111,4 +143,21 @@ document.getElementById('headphone-decrement').addEventListener('click', functio
  
     //update sub total price
     totalProductPrice();
+
+    // total price update
+    totalPrice()
+})
+
+//quick and free delevary handler
+document.getElementById('quick-delivary').addEventListener('click', function(){
+    const delivaryTotalText = document.getElementById('delivary-total');
+    delivaryTotalText.innerText = 20;
+    // update total price 
+    totalPrice()
+})
+document.getElementById('free-delivary').addEventListener('click', function(){
+    const delivaryTotalText = document.getElementById('delivary-total');
+    delivaryTotalText.innerText = 0;
+    // update total price 
+    totalPrice()
 })
