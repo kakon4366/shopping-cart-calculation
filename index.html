@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Calculation</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <header class="header-area">
+        <h1>Shopping Cart Calculation</h1>
+    </header>
+    <main class="main-part">
+        <section class=" container">
+            <div class="cart-body">
+                <h2>Shopping Cart: <span class="cart-items">3 items</span></h2>
+                <div class="products-area">
+                    <div class="product-items">
+                        <!-- start product item  -->
+                        <div class="product-item">
+                            <span class="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+                            <div class="product-thumbnail">
+                                <img width="150px" height="150px" src="images/iphonePro11.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h2>APPLE iPhone 11 Pro  (Space Grey, 64 GB)</h2>
+                                <h2>Price: $<span>1279</span></h2>
+                                <div class="quantity">
+                                    <h2>Quantity:</h2>
+                                    <div class="quantity-area">
+                                        <span class="quantity-btn"><i class="fa-solid fa-circle-minus"></i></span>
+                                        <input type="number" value="1">
+                                        <span class="quantity-btn">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end product item  -->
+                        <!-- start product item  -->
+                        <div class="product-item">
+                            <span class="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+                            <div class="product-thumbnail">
+                                <img width="150px" height="150px"  src="images/iphone-case.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h2>APPLE iPhone Case Cover Clasic Design</h2>
+                                <h2>Price: $<span>49</span></h2>
+                                <div class="quantity">
+                                    <h2>Quantity:</h2>
+                                    <div class="quantity-area">
+                                        <span class="quantity-btn"><i class="fa-solid fa-circle-minus"></i></span>
+                                        <input type="number" value="1">
+                                        <span class="quantity-btn">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end product item  -->
+                        <!-- start product item  -->
+                        <div class="product-item">
+                            <span class="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+                            <div class="product-thumbnail">
+                                <img width="150px" height="150px"  src="images/headphone.jpg" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h2>Digimate Wireless In Ear Headphone</h2>
+                                <h2>Price: $<span>1279</span></h2>
+                                <div class="quantity">
+                                    <h2>Quantity:</h2>
+                                    <div class="quantity-area">
+                                        <span class="quantity-btn"><i class="fa-solid fa-circle-minus"></i></span>
+                                        <input type="number" value="1">
+                                        <span class="quantity-btn">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end product item  -->
+                        
+                    </div>
+                    <div class="product-summary-area">
+                        <div class="product-summary">
+                            <h2>Product Summary</h2>
+                            <hr>
+                            <div class="summary-area">
+                                <div class="price-area">
+                                    <h3>Sub Total:</h3>
+                                    <h3>$1279</h3>
+                                </div>
+                                <div class="price-area">
+                                    <h3>Tax</h3>
+                                    <h3>$0</h3>
+                                </div>
+                                <div class="price-area">
+                                    <h3>Delivary:</h3>
+                                    <h3>$0</h3>
+                                </div>
+                                <div class="delivary-options">
+                                    <div class="normal">
+                                        <input type="radio" name="delivary" id="free-delivary">
+                                        <label for="free-delivary">Normal Delivary</label>
+                                    </div>
+                                    <div class="normal">
+                                        <input type="radio" name="delivary" id="quick-delivary">
+                                        <label for="quick-delivary">Quick Delivary (with $20 extra)</label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="price-area">
+                                    <h3>Total Price:</h3>
+                                    <h3>$1279</h3>
+                                </div>
+                                <button class="check-out-btn">Check Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-area">
+       <small> <p>Copyright &copy; by Shopping Cart Calculation-2022</p></small>
+    </footer>
+</body>
+</html>

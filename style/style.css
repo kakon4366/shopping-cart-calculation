@@ -1,0 +1,149 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;600&display=swap');
+/* Common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* body Css */
+.header-area{
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+.header-area h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+.main-part{
+    background-color: #F0F2F5;
+}
+.cart-body {
+    padding: 50px 0;
+}
+.cart-body h2{
+    font-size: 24px;
+}
+.cart-body .cart-items{
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Product area */
+.products-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+/*product item*/
+.product-item{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    position: relative;
+}
+.product-item .product-thumbnail{
+    width: 150px;
+    margin-right: 12px;
+}
+.product-item .product-details h2{
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+.quantity .quantity-area{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+.quantity .quantity-area input{
+    width: 56px;
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 5px;
+}
+.quantity-btn i{
+    font-size: 24px;
+    color: #4A5CFF;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.close-btn i{
+    color: red;
+    font-size: 18px;
+}
+
+
+/* product summary css */
+.product-summary-area{
+    margin: 20px 0;
+    
+}
+.product-summary{
+    border: 1px solid black;
+    padding: 48px;
+    background-color: #ffffff;
+}
+hr{
+    margin: 12px 0;
+}
+.price-area{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+
+.delivary-options{
+    display: flex;
+    justify-content: space-between;
+}
+.delivary-options label{
+    font-size: 13px;
+}
+
+.check-out-btn{
+    margin-top: 36px;
+    width: 100%;
+    background-color: #4A5CFF;
+    padding: 16px 0;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+/* Footer css */
+.footer-area{
+    background-color: black;
+}
+.footer-area p{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0
+}
